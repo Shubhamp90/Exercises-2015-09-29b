@@ -1,10 +1,15 @@
 
 public class Person {
+    public enum Role{
+        TEACHER,
+        STUDENT 
+        
+    }
 
-  String role;
+ Role role;
   String name;
 
-  public Person(String name, String role) {
+  public Person(String name, Role role) {
     this.name = name;
     this.role = role;
   }
