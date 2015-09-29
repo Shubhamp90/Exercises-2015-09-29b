@@ -1,4 +1,6 @@
 
+
+
 public class Person {
     public enum Role{
         TEACHER,
@@ -16,6 +18,8 @@ public class Person {
 
   @Override
   public String toString() {
-    return this.name + " (" + this.role + ')';
+      //"TEACHER" or "STUDENT"
+      String roleValue = this.role.name();
+    return this.name + " (" + roleValue.toLowerCase() + ')';
   }
 }
